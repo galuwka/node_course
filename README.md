@@ -1,7 +1,10 @@
 # node_course
 Node.js Course
+
 Clone repository
  
 Install node.js v12 or above
 
-Run npm install
+Usage: 
+
+Run `PORT=3000 node app.js -env=dev` in command line
