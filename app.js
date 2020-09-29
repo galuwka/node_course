@@ -9,6 +9,6 @@ http.createServer((req, res) => {
     res.writeHeader(200, {'Content-Type': 'application/json'});
     res.end(JSON.stringify({message: 'Hello world!'}));
 }).listen(PORT, () => {
-    logger.log(`Current environment: ${ENV}`);
-    logger.log(`Listening on port ${PORT}`);
+    logger.log('Current environment:', ENV);
+    logger.log('Listening on port', PORT);
 });

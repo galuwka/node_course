@@ -1,6 +1,11 @@
+const loggerHelper = (typeOfLog, message, arg = '') => {
+    console[typeOfLog](message, arg)
+};
+
+
 module.exports = {
-    log: (message) => console.log('Log:', message),
-    debug: (message) => console.debug('Debug:', message),
-    error: (message) => console.error('Error:', message),
-    warn: (message) => console.warn('Warn:', message)
+    log: (message, arg) => loggerHelper('log', message, arg),
+    debug: (message, arg) => loggerHelper('debug', message, arg),
+    error: (message, arg) => loggerHelper('error', message, arg),
+    warn: (message, arg) => loggerHelper('warn', message, arg),
 };
