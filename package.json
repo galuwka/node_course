@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/galuwka/node_course/issues"
   },
-  "homepage": "https://github.com/galuwka/node_course#readme"
+  "homepage": "https://github.com/galuwka/node_course#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csv-parser": "^2.3.3",
+    "express": "^4.17.1",
+    "jsonexport": "^3.0.1"
+  }
 }
